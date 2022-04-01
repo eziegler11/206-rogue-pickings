@@ -53,9 +53,10 @@ header {
 }
 
 header h1 {
-	margin: 0;
+	width: 100%;
 	padding: 38px 0 15px 0;
 	border-bottom: 3px solid #77a466;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -175,7 +176,7 @@ footer span {
 	/* Tablet Styles Here */
 	.bottom-section {
 		display: flex;
-		justify-content: flex-start;
+		align-items: flex-start;
 		flex-flow: row;
 		border-top: 1px solid #eee
 	}
@@ -194,5 +195,18 @@ footer span {
 
 @media all and (min-width: 1200px) {
 	/* Desktop Styles Here */
-
+	header {
+		display: flex;
+		flex-flow: row;
+	}
+	header nav ul {
+		display: flex;
+		flex-flow: row;
+	}
+	header h1 {
+		width: 100%;
+		padding: 10px 0;
+		border-bottom: none;
+		text-align: left;
+	}
 }
