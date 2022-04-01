@@ -40,12 +40,12 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 21px;
-    padding: 0 30px;
+    /* padding: 0 0px; */
 }
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
+	border-bottom: 0.1875em solid #77a466;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -118,7 +118,7 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	border-top: 1px solid #eee;
+	/* border-top: 1px solid #eee; */
 }
 
 .section-one h3 {
@@ -126,13 +126,13 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/* border-left: 1px solid #eee;
+	border-right: 1px solid #eee; */
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -169,4 +169,30 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media all and (min-width: 768px) {
+	/* Tablet Styles Here */
+	.bottom-section {
+		display: flex;
+		justify-content: flex-start;
+		flex-flow: row;
+		border-top: 1px solid #eee
+	}
+	.section-one {
+
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 25px;
+	}
+	.section-three {
+		padding-left: 25px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	/* Desktop Styles Here */
+
 }
